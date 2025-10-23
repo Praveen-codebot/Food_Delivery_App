@@ -1,0 +1,164 @@
+/* ---------- General Page Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+
+.highlight-logo{
+	background-color: #ff5722;
+	padding:10px 20px;
+	border-radius: 8px;
+	color:black;
+	display:inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5722;
+    transform: translateY(-2px);
+}
+
+
+/* ---------- Auth Container ---------- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.auth-box {
+    width: 400px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+/* ---------- Signup Error Message ---------- */
+.signup-error {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 20px auto;
+    padding: 12px 10px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size:18px
+}
+
+/* ---------- Signup Success Message (optional) ---------- */
+.signup-success {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 20px auto;
+    padding: 12px 15px;
+    background-color: #d1e7dd; /* light green */
+    border: 1px solid #badbcc;
+    color: #0f5132;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* ---------- Form Elements ---------- */
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+.auth-box input[type="text"],
+.auth-box input[type="email"],
+.auth-box input[type="tel"],
+.auth-box input[type="password"] {
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ---------- Button ---------- */
+.auth-box button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-box h2{
+	font-size:38px;
+}
+
+.auth-box button:hover {
+    background-color: #e04343;
+}
+
+/* ---------- Switch Link ---------- */
+.switch-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-link a {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}

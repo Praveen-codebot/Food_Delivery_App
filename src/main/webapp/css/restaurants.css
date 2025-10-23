@@ -1,0 +1,170 @@
+/* ---------- General Page Styles ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.highlight-logo{
+    background-color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5722;
+    transform: translateY(-2px);
+}
+
+/* ---------- Section ---------- */
+.restaurant-list {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.restaurant-list h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ---------- Search Form ---------- */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-form button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #e64a19;
+}
+
+/* ---------- Restaurants Grid ---------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* ---------- Individual Restaurant Card ---------- */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: calc(20% - 20px); /* 5 cards per row */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Card Images */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Card Info */
+.card h2 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    margin: 0 10px 10px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(25% - 20px); /* 4 per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(33.33% - 20px); /* 3 per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 per row */
+    }
+}

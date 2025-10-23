@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* ---------- General Styles ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url();
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+
+.highlight-logo{
+	background-color: #ff5722;
+	padding:10px 20px;
+	border-radius: 8px;
+	color:black;
+	display:inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5722;
+    transform: translateY(-2px);
+}
+
+/* ---------- Page Header ---------- */
+h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* ---------- Order Card ---------- */
+.order-card {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #ff6b6b;
+}
+
+.order-card p {
+    margin: 5px 0 15px 0;
+    font-size: 14px;
+}
+
+/* ---------- Order Items Table ---------- */
+.order-items {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-items th, .order-items td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.order-items th {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.order-items tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ---------- Horizontal Rule ---------- */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* ---------- Back to Home Link ---------- */
+.back-home a {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #e85c5c;
+}
+
+/* ---------- Responsive ---------- */
+@media screen and (max-width: 768px) {
+    .order-card {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .order-items th, .order-items td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

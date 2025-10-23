@@ -1,0 +1,258 @@
+/* ---------- General Page Styles ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url();
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+
+.highlight-logo{
+	background-color: #ff5722;
+	padding:10px 20px;
+	border-radius: 8px;
+	color:black;
+	display:inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5722;
+    transform: translateY(-2px);
+}
+
+/* ---------- Hero / Welcome ---------- */
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom:10px;
+    padding-bottom:20px;
+}
+
+
+.hero-content{
+
+	border-radius: 8px;
+	margin-bottom:0px;
+	padding-top:10px;
+	align-items: center;
+	height:275px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-top:0px;
+    margin-bottom: 75px;
+    font-weight: bold;
+    color: black;
+    text-align:center;
+}
+
+.highlight-text{
+	background-color: #ff5722;
+	padding:10px 20px;
+	border-radius: 8px;
+	color:black;
+	display:inline-block;
+}
+
+.hero p {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.hero .cta-btn {
+    text-decoration: none;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+}
+
+.hero .cta-btn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+/* ---------- Sections ---------- */
+section h2 {
+    font-size: 24px;
+    margin: 30px 20px 15px 20px;
+    color: #333;
+    
+}
+
+/* ---------- Restaurants & Menu Containers ---------- */
+.restaurants-container,
+.menu-container {
+	margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: flex-start;
+}
+
+/* ---------- Individual Cards ---------- */
+.restaurant-card,
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.restaurant-card:hover,
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Images */
+.restaurant-card img,
+.menu-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.restaurant-card img:hover,
+.menu-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Card Info */
+.restaurant-card .info,
+.menu-card .info {
+    padding: 12px;
+}
+
+.restaurant-card h3,
+.menu-card h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.restaurant-card p,
+.menu-card p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Price Styling */
+.menu-card p {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.menu-btn{
+	text-decoration: none;
+}
+
+/* ---------- Responsive Layout ---------- */
+@media (max-width: 1200px) {
+    .restaurant-card,
+    .menu-card {
+        width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .restaurant-card,
+    .menu-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .restaurant-card,
+    .menu-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-card,
+    .menu-card {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links a {
+        margin: 5px 10px 0 0;
+    }
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
