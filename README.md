@@ -96,10 +96,10 @@ Food_Delivery_App/
 
 ## 📸 Screenshots
 
-![Home Page](images/screenshots/home.png)
-![Login Page](images/screenshots/login.png)
-![Signup Page](images/screenshots/signup.png)
-![Cart Page](images/screenshots/cart.png)
+![Home Page](src/main/webappimages/screenshots/home.png)
+![Login Page](src/main/webapp/images/screenshots/login.png)
+![Signup Page](src/main/webapp/images/screenshots/signup.png)
+![Cart Page](src/main/webapp/images/screenshots/cart.png)
 
 ---
 
