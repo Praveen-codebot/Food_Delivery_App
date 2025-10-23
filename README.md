@@ -76,7 +76,7 @@ Food_Delivery_App/
      ```sql
      CREATE DATABASE food_delivery;
      ```
-   - Update your `DBConnection.java` file with your MySQL credentials.
+   - Update your `DbConnection.java` file with your MySQL credentials.
 
 4. **Run on Server**  
    - Right-click project → Run As → Run on Server → Select **Apache Tomcat**  
@@ -96,20 +96,19 @@ Food_Delivery_App/
 
 ## 📸 Screenshots
 
-*(You can add screenshots here later — just upload images to `/images/` and link like this)*  
-```markdown
-![Home Page](images/home.png)
-![Login Page](images/login.png)
-```
+![Home Page](images/screenshots/home.png)
+![Login Page](images/screenshots/login.png)
+![Signup Page](images/screenshots/signup.png)
+![Cart Page](images/screenshots/cart.png)
 
 ---
 
 ## 🧑‍💻 Author
 
-**Your Name**  
-📧 your.email@example.com  
-💼 [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)  
-🌐 [GitHub Profile](https://github.com/yourusername)
+**Praveen Kumar Potti**  
+📧 praveen15537@gmail.com
+💼 [LinkedIn Profile](https://www.linkedin.com/in/praveen-potti-0b229325a/)  
+🌐 [GitHub Profile](https://github.com/Praveen-codebot)
 
 ---
 
